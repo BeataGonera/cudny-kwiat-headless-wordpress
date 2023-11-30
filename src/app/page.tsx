@@ -1,14 +1,9 @@
-import { getPosts } from "@/api/lib";
 import Image from "next/image";
 
-type Post = {};
-
 export default async function Home() {
-  const posts = await getPosts();
-  console.log(posts);
   return (
     <main className="">
-      <section className="h-screen w-screen bg-[url('/home_background.png')] bg-cover bg-center bg-no-repeat text-2xl"></section>
+      <section className="h-screen w-screen bg-landing-page bg-cover bg-center bg-no-repeat text-2xl"></section>
       <section className="flex h-auto w-screen flex-col items-center gap-16 bg-primary px-8 py-24 text-center text-2xl lg:px-96 lg:py-48">
         <h3>Nasze studio działa od 2018r</h3>
         <p>
